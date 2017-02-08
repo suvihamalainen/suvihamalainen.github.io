@@ -1,7 +1,18 @@
+.header {
+    background-image: url("http://www.merinova.fi/wp-content/uploads/2016/10/bioenergia-1920x300.jpg");
+    background-size: cover;
+    padding: 70px;
+    
+}
+
+.h1 {
+    color: #fff;
+}
+
 .navigation {
     background-color: #333;
     text-align: center;
-    position: fixed;
+    /**position: fixed;**/
     top:0px;
     left: 0px;
     right: 0px;

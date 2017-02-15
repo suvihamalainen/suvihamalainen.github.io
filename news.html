@@ -2,18 +2,43 @@
 <html>
     <head>
         <meta charset"UTF-8" />
-        <meta name="author" content="Teemu Teekkari" />
-        <meta name="description" content="A simple webpage lorem ipsum.." />
+        <meta name="author" content="Bioenergia ry" />
+        <meta name="description" content="Bioenergian käyttöä edistävä sivusto." />
         <link rel="shortcut icon"
          href="favicon.ico" />
-        <title>Puuenergia - Uutiset </title>
+        <title>Puuenergia - Uutiset</title>
         <link rel="stylesheet" type"text/css" href="stylesheet.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather" rel="stylesheet">
     </head>
     
     <body>
-        <footer>
-            <img src="logo_bio.gif">
-            <p> © Suvi Hämäläinen 2017</p>
+        <header class="header">
+            <h1>Puuenergia 2017</h1>
+        </header>
+        <nav class="navigation">
+            <ul>
+                <li class="others"> <a href="index.html"> Etusivu</a> </li>
+                <li class="now"> <a href ="news.html"> Uutiset </a> </li>
+                <li class="others"> <a href ="contacts.html"> Yhteystiedot </a> </li>
+            </ul>
+        </nav>
+        
+        <section>
+               <h2 class="headline">Uutiset</h2>
+            <article class="blog-post">
+                <h3>EU:lta tuli vauhtia bioenergialle, mutta kanta ei vastannut kaikkiin kysymyksiin</h3>
+                <p>Suomi on saamassa EU:lta tukea bioenergiahankkeilleen, mutta metsien hiilinielujen laskenta voi tuoda kylmän suihkun.</p>
+                <img class="resize" src="putin.jpg" alt="Vladimir Putin, Barack Obama ja Xi Jinping ilmastokokouksessa." title="Ilmastokysymykset herättävät paljon keskustelua päättäjien joukossa." width="400px">
+                <a href="http://www.hs.fi/paakirjoitukset/art-2000004893195.html" target="_blank"> Lue lisää</a> 
+            </article>
+        </section>
+        
+        <footer class="footer">
+            <ul>
+                <li>Puuenergia 2017</li>
+                <li><a href="http://www.bioenergia.fi/"><img id="logo" src="logo_bio.gif"></a><br>Kaisaniemenkatu 4 A, 00100 Helsinki</li>
+                <li>© Suvi Hämäläinen 2017</li>
+            </ul>
         </footer>
     </body>
 </html>

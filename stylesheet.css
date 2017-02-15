@@ -1,38 +1,47 @@
 body {
-    font-family: 'Raleway', sans-serif;
-    color: #fff;
+    font-family: 'Lato', sans-serif;
+    color: black;
 }
+
 .header {
-    background-image: url("http://www.merinova.fi/wp-content/uploads/2016/10/bioenergia-1920x300.jpg");
-    background-size: cover;
-    padding: 70px;
-    
+  background: url(puut.jpeg) no-repeat center center fixed; 
+  background-size: cover;
+  height: 300px;
+  margin: 0px;
+  text-align: center;
 }
-
-
 
 .navigation {
-    
-    text-align: left;
+    text-align: center;
     position: fixed;
     top:0px;
     left: 0px;
     right: 0px;
     padding: 10px;
     z-index: 999;
-    float: left;
+}
+
+
+.others {
+    display: inline-block;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
     
 }
 
-.navigation li {
-    padding: 30px;
-    color: #000;
+.now {
+    display: inline-block;
+    padding: 20px;
+    background-color: rgba(200, 200, 200, 0.9);
+    border-radius: 5px;
 }
 
 .navigation ul {
     list-style-type: none;
     margin: 0;
     padding: 0;  
+    
 }
 
 .navigation a {
@@ -40,33 +49,33 @@ body {
     color: #000;
 }
 
-.navigation a:hover {
-    color: #ff0000;
+.navigation li:hover {
+    background-color: rgba(230, 230, 230, 0.9)
 }
+
 .blog-post {
     width: 70%;
     margin: 0 auto;
     margin-top: 30px;
     text-align: center;
-    
-    color: #fff;
+    color: #000;
     padding: 20px;
+    max-width: 700px;
+    background-color: #f2f2f2;
+    line-height: 150%;
 }
 
-.blog-post h2 {
-    transition: 1s;
-    font-size: 1em;
-}
-
-.blog-post h2:hover{
-    transition: 1s;
-    font-size: 2em;
+.blog-post a {
+    color: #000;
 }
 
 .resize {
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
     height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
 }
 
 .video-container {
@@ -91,7 +100,7 @@ body {
 
 .footer {
     text-align: center;
-    
+    background-color: rgb(230, 230, 230);
 }
 
 @media screen and (max-width: 500px) {
@@ -99,9 +108,25 @@ body {
 }
 
 h1 {
-   text-align: center; 
+    text-align: center; 
+    position: relative;
+    top: 100px;
+    display: inline-block;
+    font-size: 3em;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+
+h2 {
+  font-size: 1.5em;
+  text-align: center;
 }
 
 h1, h2, li {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Merriweather', serif;
+}
+
+.face {
+    max-width: 200px;
+    
 }

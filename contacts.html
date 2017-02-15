@@ -1,19 +1,51 @@
 <!DOCTYPE html>
-<hmtl>
+<html>
     <head>
         <meta charset"UTF-8" />
-        <meta name="author" content="Teemu Teekkari" />
-        <meta name="description" content="A simple webpage lorem ipsum.." />
+        <meta name="author" content="Bioenergia ry" />
+        <meta name="description" content="Bioenergian käyttöä edistävä sivusto." />
         <link rel="shortcut icon"
          href="favicon.ico" />
         <title>Puuenergia - Yhteystiedot </title>
         <link rel="stylesheet" type"text/css" href="stylesheet.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather" rel="stylesheet">
     </head>
     
     <body>
-        <footer>
-            <img src="logo_bio.gif">
-            <p> © Suvi Hämäläinen 2017</p>
+        <header class="header">
+            <h1>Puuenergia 2017</h1>
+        </header>
+        <nav class="navigation">
+            <ul>
+                <li class="others"> <a href="index.html"> Etusivu</a> </li>
+                <li class="others"> <a href ="news.html"> Uutiset </a> </li>
+                <li class="now"> <a href ="contacts.html"> Yhteystiedot </a> </li>
+            </ul>
+        </nav>
+        
+        <section>
+            <h2>Yhteystiedot</h2>
+            <article class="blog-post">
+                <img class="face"src="aha.jpg" alt="Matti Lammen naamakuva" title="Matti Lampi" width="200px">
+                <h3>Matti Lampi</h3>
+                <p class="testi">
+                   Projektikoordinaattori<br>puh. +358501234567<br>matti.lampi@puuenergia.fi
+                </p> 
+            </article>
+            <article class="blog-post">
+                <h3>Toimisto</h3>
+                <p>
+                    Käyntiosoite:Kaisaniemenkatu 4, 00100 Helsinki<br>Kotisivut: <a href="http://www.bioenergia.fi/">www.bioenergia.fi</a>
+                </p>
+            </article>
+        </section>
+        
+        <footer class="footer">
+            <ul>
+                <li>Puuenergia 2017</li>
+                <li><a href="http://www.bioenergia.fi/"><img id="logo" src="logo_bio.gif"></a><br>Kaisaniemenkatu 4 A, 00100 Helsinki</li>
+                <li>© Suvi Hämäläinen 2017</li>
+            </ul>
         </footer>
     </body>
-</hmtl>
+</html>

@@ -21,21 +21,26 @@ body {
     z-index: 999;
 }
 
+.navigation a {
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+}
 
 .others {
-    display: inline-block;
-    padding: 20px;
     background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
     border-radius: 5px;
-    
+    display: inline-block
 }
 
 .now {
-    display: inline-block;
-    padding: 20px;
     background-color: rgba(200, 200, 200, 0.9);
+    padding: 20px;
     border-radius: 5px;
+    display: inline-block
 }
+
 
 .navigation ul {
     list-style-type: none;
@@ -44,10 +49,6 @@ body {
     
 }
 
-.navigation a {
-    text-decoration: none;
-    color: #000;
-}
 
 .navigation li:hover {
     background-color: rgba(230, 230, 230, 0.9)
@@ -103,10 +104,6 @@ body {
     background-color: rgb(230, 230, 230);
 }
 
-@media screen and (max-width: 500px) {
-    .blog-post: 100%;
-}
-
 h1 {
     text-align: center; 
     position: relative;
@@ -129,4 +126,8 @@ h1, h2, li {
 .face {
     max-width: 200px;
     
+}
+
+@media screen and (max-width: 700px) {
+    .blog-post: 100%;
 }

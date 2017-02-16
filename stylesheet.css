@@ -217,7 +217,7 @@ p {
   font-size: 1.3em;
   color: #fff;
 }
-@media screen and (max-device-width: 640px) {
+@media screen and (max-device-width: 800px) {
     .blog-post {
         width: 100%;
     }

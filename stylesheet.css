@@ -74,21 +74,21 @@ li {
   width: 100%;
 }
 
-.headerc {
+.contactsheader {
   background: linear-gradient(rgba(255, 255, 255, 0.3),rgba(0, 0, 0, 0.3)), url(tukit.jpg) no-repeat center center fixed; 
   background-size: cover;
   margin: 0px;
   height:300px;
 }
 
-.headeri {
+.infoheader {
   background: linear-gradient(rgba(255, 255, 255, 0.3),rgba(0, 0, 0, 0.3)), url(puut.jpeg) no-repeat center center fixed; 
   background-size: cover;
   margin: 0px;
   height:300px;
 }
 
-.headern {
+.newsheader {
     background: linear-gradient(rgba(255, 255, 255, 0.3),rgba(0, 0, 0, 0.3)),url(up.jpg) no-repeat center center fixed; 
   background-size: cover;
   margin: 0px;
@@ -164,58 +164,23 @@ p {
 
 @media screen and (max-width: 600px) {
     .blog-post {
-        width: 95%;
-        margin: 0;
-        position: absolute;
-        right:1px;
+        width: 100%;
+        
+        margin: 0 auto;
+        
     }
     #welcome {
         width: 100%;
         line-height: 120%;
     }
-    #infofooter {
-        position: relative;
-        top: 720px;
-    }
     
-    #newsfooter {
-        position: relative;
-        top: 520px;
-    }
-    
-    #contactsfooter {
-        position: relative;
-        top: 400px;
-    }
-    
-    #toimisto {
-        position: relative;
-        top: 410px;
+    header {
+        width: {
+            100%;
+        }
     }
 }
 
-@media screen and (max-device-width: 640px) {
-    .blog-post {
-        width: 100%;
-    }
-    
-    h1{
-        font-size: 6em; 
-    }
-    
-    h2 {
-        font-size: 3em;
-    }
-    
-    p {
-        1.5em;
-    }
-    
-    .body {
-        background: url(metsa.png) no-repeat center center fixed;
-        height: 100%;
-    }
-}
 
 .footer li {
     display: inline-block;
@@ -240,9 +205,7 @@ p {
     right: 0;
     bottom: 0;
     left: 0;
-    text-align: center;
-    background-color: rgb(230, 230, 230);
-    bottom: 0px;
+    padding: inherit;
 }
 
 #welcome {
@@ -253,4 +216,34 @@ p {
   text-align: center;
   font-size: 1.3em;
   color: #fff;
+}
+@media screen and (max-device-width: 640px) {
+    .blog-post {
+        width: 100%;
+    }
+    
+    h1{
+        font-size: 6em; 
+    }
+    
+    h2 {
+        font-size: 3em;
+    }
+    
+    p {
+        1.5em;
+    }
+    
+    .body {
+        background: url(metsa.png) no-repeat center center fixed;
+        height: 100%;
+    }
+    
+    .footer {
+        position:absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        font-size: 2em;
+    }
 }

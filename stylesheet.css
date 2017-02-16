@@ -69,7 +69,7 @@ li {
     display:block;   
 }    
 
-.body {
+.indexbody {
   background: url(metsa.png) no-repeat center center fixed;
   width: 100%;
 }
@@ -162,26 +162,6 @@ p {
     max-width: 200px;
 }
 
-@media screen and (max-width: 600px) {
-    .blog-post {
-        width: 100%;
-        
-        margin: 0 auto;
-        
-    }
-    #welcome {
-        width: 100%;
-        line-height: 120%;
-    }
-    
-    header {
-        width: {
-            100%;
-        }
-    }
-}
-
-
 .footer li {
     display: inline-block;
     margin: 0px 5px;
@@ -217,13 +197,33 @@ p {
   font-size: 1.3em;
   color: #fff;
 }
-@media screen and (max-device-width: 800px) {
+
+@media screen and (max-width: 600px) {
     .blog-post {
         width: 100%;
+        margin: 0 auto;
     }
     
-    h1{
-        font-size: 6em; 
+    #welcome {
+        width: 100%;
+        line-height: 120%;
+    }
+    
+    .infoheader {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-device-width: 500px) {
+    .blog-post {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    h1 {
+        font-size: 6em;
+        color:red;
     }
     
     h2 {
@@ -245,5 +245,14 @@ p {
         bottom: 0;
         left: 0;
         font-size: 2em;
+    }
+    
+    #menu {
+        padding: 10px;
+    }
+    
+    .indexbody {
+        height: 100%;
+        width: auto;
     }
 }

@@ -163,7 +163,7 @@ p {
 }
 
 .footer li {
-    display: inline-block;
+   display: inline-block;
     margin: 0px 5px;
 }
 
@@ -198,10 +198,17 @@ p {
   color: #fff;
 }
 
+@media screen and (max-width: 720px) {
+    .footer li {
+        display: inherit;
+        margin-right: 10%;    
+    }
+}
+
 @media screen and (max-width: 600px) {
     .blog-post {
-        width: 100%;
-        margin: 0 auto;
+        width: 90%;
+        overflow:hidden;
     }
     
     #welcome {
@@ -216,22 +223,26 @@ p {
 
 
 @media screen and (max-device-width: 500px) {
+    
     .blog-post {
-        width: 100%;
+        width: 90%;
         margin: 0 auto;
     }
     
     h1 {
-        font-size: 6em;
-        color:red;
+        font-size: 7em;
     }
     
     h2 {
-        font-size: 3em;
+        font-size: 5em;
+    }
+    
+    h3 {
+        font-size: 4em
     }
     
     p {
-        1.5em;
+        3em;
     }
     
     .body {
@@ -247,8 +258,13 @@ p {
         font-size: 2em;
     }
     
-    #menu {
-        padding: 10px;
+    .footer li {
+        display: inherit;
+        
+    }
+    
+    .navigation a {
+        padding: 40px;
     }
     
     .indexbody {

@@ -176,8 +176,6 @@ p {
 
 #indexfooter li {
     color: black;
-    display: inline-block;
-    margin: 0px 5px;
 }
 
 #indexfooter {
@@ -206,9 +204,9 @@ p {
 }
 
 @media screen and (max-width: 600px) {
+    
     .blog-post {
         width: 90%;
-        overflow:hidden;
     }
     
     #welcome {
@@ -226,7 +224,6 @@ p {
     
     .blog-post {
         width: 90%;
-        margin: 0 auto;
     }
     
     h1 {
@@ -234,41 +231,35 @@ p {
     }
     
     h2 {
-        font-size: 5em;
+        font-size: 4em;
+        line-height: 150%;
     }
     
     h3 {
-        font-size: 4em
-    }
-    
-    p {
-        3em;
-    }
-    
-    .body {
-        background: url(metsa.png) no-repeat center center fixed;
-        height: 100%;
-    }
-    
-    .footer {
-        position:absolute;
-        right: 0;
-        bottom: 0;
-        left: 0;
         font-size: 2em;
     }
     
+    .indexbody {
+        background: url(metsa.png) no-repeat center center fixed;
+        height: 100%;
+    }
+     
     .footer li {
         display: inherit;
         
     }
     
     .navigation a {
-        padding: 40px;
+        padding: 30px;
+        font-size: 2em;
     }
     
     .indexbody {
         height: 100%;
         width: auto;
+    }
+    
+    header {
+        height: 200%;
     }
 }

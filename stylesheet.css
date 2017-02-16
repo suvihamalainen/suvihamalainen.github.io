@@ -3,6 +3,67 @@ body {
     background-color: #f2f2f2;
 }
 
+li {
+    font-family: 'Playfair Display SC', serif;
+}
+
+.navigation {
+    background-color: #fff;
+    text-align: center;
+    position: fixed;
+    top:0px;
+    left:0px;
+    right: 0px;
+    padding: 5px;
+    z-index: 999;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+}
+
+.others {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+}
+
+.now {
+    background-color: rgba(230, 230, 230, 0.9);
+    padding: 20px;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;  
+    padding:0;     
+    margin:0;  
+}
+
+.navigation li:hover {
+    background-color: rgba(230, 230, 230, 0.9);
+}
+
+.navigation li {      
+    float:left; 
+}  
+
+.navigation li ul li {    
+    float:none;   
+}    
+
+.navigation li ul {    
+    display:none;     
+    position:absolute;     
+    z-index:1 ;   
+}   
+
+.navigation li:hover ul {    
+    display:block;   
+}    
+
 .headerc {
   background: linear-gradient(rgba(255, 255, 255, 0.3),rgba(0, 0, 0, 0.3)), url(tukit.jpg) no-repeat center center fixed; 
   background-size: cover;
@@ -23,68 +84,6 @@ body {
   margin: 0px;
   height:300px;
 }
-
-li {
-    font-family: 'Playfair Display SC', serif;
-}
-
-.navigation {
-    background-color: #fff;
-    text-align: center;
-    position: fixed;
-    top:0px;
-    left:0px;
-    right: 0px;
-    padding: 5px;
-    z-index: 999;
-}
-
-.navigation a {
-    text-decoration: none;
-    color: #000;
-}
-
-.others {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    border-radius: 5px;
-    
-}
-
-.now {
-    background-color: rgba(200, 200, 200, 0.9);
-    padding: 20px;
-    border-radius: 5px;
-    
-}
-
-.navigation ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;  
-    padding:0;     
-    margin:0;  
-}
-
-.navigation li:hover {
-    background-color: rgba(230, 230, 230, 0.9)
-}
-
-.navigation li {      
-    float:left;
-    
-}    
-.navigation li ul li {    
-    float:none;    
-}    
-.navigation li ul {    
-    display:none;     
-    position:absolute;     
-    z-index:1    
-}    
-.navigation li:hover ul {    
-    display:block;   
-}    
 
 .blog-post {
     width: 70%;
@@ -166,9 +165,21 @@ p {
     }
 }
 
-@media screen and (max-device-width: 500px) {
+@media screen and (max-device-width: 640px) {
     .blog-post {
         width: 100%;
+    }
+    
+    h1{
+        font-size: 6em; 
+    }
+    
+    h2 {
+        font-size: 3em;
+    }
+    
+    p {
+        1.5em;
     }
 }
 

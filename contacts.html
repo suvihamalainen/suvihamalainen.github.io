@@ -10,18 +10,24 @@
         <link rel="stylesheet" type="text/css" href="normalize.css">
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
     </head>
     
     <body>
-        <header class="header">
+        <header class="headerc">
             <h1>Puuenergia 2017</h1>
         </header>
         <nav class="navigation">
-            <ul>
-                <li class="others"> <a href="index.html"> Etusivu</a> </li>
-                <li class="others"> <a href ="news.html"> Uutiset </a> </li>
-                <li class="now"> <a href ="contacts.html"> Yhteystiedot </a> </li>
+            <ul class="menu">
+                <li><a href="#"> <img src="menu.png" alt="Menu icon"></a>
+                    <ul>
+                        <li class="others"> <a href="index.html">Etusivu</a></li>
+                        <li class="others"> <a href="info.html">Info</a></li>
+                        <li class="others"> <a href ="news.html">Uutiset</a></li>
+                        <li class="now"> <a href ="contacts.html">Yhteystiedot</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
         
@@ -37,7 +43,7 @@
             <article class="blog-post">
                 <h3>Toimisto</h3>
                 <p>
-                    Käyntiosoite:Kaisaniemenkatu 4, 00100 Helsinki<br>Kotisivut: <a href="http://www.bioenergia.fi/">www.bioenergia.fi</a>
+                    Käyntiosoite:Kaisaniemenkatu 4, 00100 Helsinki<br>Kotisivut: <a href="http://www.bioenergia.fi/" target="_blank">www.bioenergia.fi</a>
                 </p>
             </article>
         </section>
@@ -45,7 +51,7 @@
         <footer class="footer">
             <ul>
                 <li>Puuenergia 2017</li>
-                <li><a href="http://www.bioenergia.fi/"><img id="logo" src="logo_bio.gif" alt="Bioenergia ry:n logo"></a><br>Kaisaniemenkatu 4 A, 00100 Helsinki</li>
+                <li><a href="http://www.bioenergia.fi/" target="_blank"><img id="logo" src="logo_bio.gif" alt="Bioenergia ry:n logo"></a><br>Kaisaniemenkatu 4 A, 00100 Helsinki</li>
                 <li>© Suvi Hämäläinen 2017</li>
             </ul>
         </footer>

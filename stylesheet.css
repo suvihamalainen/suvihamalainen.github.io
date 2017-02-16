@@ -1,68 +1,99 @@
 body {
-    font-family: 'Lato', sans-serif;
     color: black;
+    background-color: #f2f2f2;
 }
 
-.header {
-  background: url(puut.jpeg) no-repeat center center fixed; 
+.headerc {
+  background: linear-gradient(rgba(255, 255, 255, 0.3),rgba(0, 0, 0, 0.3)), url(tukit.jpg) no-repeat center center fixed; 
   background-size: cover;
-  height: 300px;
   margin: 0px;
-  text-align: center;
+  height:300px;
+}
+
+.headeri {
+  background: linear-gradient(rgba(255, 255, 255, 0.3),rgba(0, 0, 0, 0.3)), url(puut.jpeg) no-repeat center center fixed; 
+  background-size: cover;
+  margin: 0px;
+  height:300px;
+}
+
+.headern {
+    background: linear-gradient(rgba(255, 255, 255, 0.3),rgba(0, 0, 0, 0.3)),url(up.jpg) no-repeat center center fixed; 
+  background-size: cover;
+  margin: 0px;
+  height:300px;
+}
+
+li {
+    font-family: 'Playfair Display SC', serif;
 }
 
 .navigation {
+    background-color: #fff;
     text-align: center;
     position: fixed;
     top:0px;
-    left: 0px;
+    left:0px;
     right: 0px;
-    padding: 10px;
+    padding: 5px;
     z-index: 999;
 }
 
 .navigation a {
     text-decoration: none;
     color: #000;
-    display: inline-block;
 }
 
 .others {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
     border-radius: 5px;
-    display: inline-block
+    
 }
 
 .now {
     background-color: rgba(200, 200, 200, 0.9);
     padding: 20px;
     border-radius: 5px;
-    display: inline-block
+    
 }
-
 
 .navigation ul {
     list-style-type: none;
     margin: 0;
     padding: 0;  
-    
+    padding:0;     
+    margin:0;  
 }
-
 
 .navigation li:hover {
     background-color: rgba(230, 230, 230, 0.9)
 }
+
+.navigation li {      
+    float:left;
+    
+}    
+.navigation li ul li {    
+    float:none;    
+}    
+.navigation li ul {    
+    display:none;     
+    position:absolute;     
+    z-index:1    
+}    
+.navigation li:hover ul {    
+    display:block;   
+}    
 
 .blog-post {
     width: 70%;
     margin: 0 auto;
     margin-top: 30px;
     text-align: center;
-    color: #000;
     padding: 20px;
     max-width: 700px;
-    background-color: #f2f2f2;
+    background-color: #fff;
     line-height: 150%;
 }
 
@@ -93,41 +124,101 @@ body {
     height: 100%;
 }
 
-.footer li {
-    color: black;
-    display: inline-block;
-    margin: 20px;
-}
-
-.footer {
-    text-align: center;
-    background-color: rgb(230, 230, 230);
-}
-
 h1 {
     text-align: center; 
     position: relative;
     top: 100px;
-    display: inline-block;
     font-size: 3em;
-    background: rgba(255, 255, 255, 0.5);
     border-radius: 5px;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    z-index: 999;
+    color: #fff;
+    
 }
 
 h2 {
   font-size: 1.5em;
   text-align: center;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
 }
 
-h1, h2, li {
-    font-family: 'Merriweather', serif;
+p {
+    font-family: 'Lato', sans-serif;
+    color: black;
 }
 
 .face {
     max-width: 200px;
-    
 }
 
-@media screen and (max-width: 700px) {
-    .blog-post: 100%;
+@media screen and (max-width: 600px) {
+    .blog-post {
+        width: 95%;
+        margin: 0;
+        position: absolute;
+        right:1px;
+    }
+    .welcome {
+        width: 100%;
+        line-height: 120%;
+    }
+}
+
+@media screen and (max-device-width: 500px) {
+    .blog-post {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  .puut {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
+}
+
+.footer li {
+    display: inline-block;
+    margin: 0px 5px;
+}
+
+.footer {
+    text-align: center;
+    background-color: rgb(230, 230, 230);
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.ifooter li {
+    color: black;
+    display: inline-block;
+    margin: 0px 5px;
+}
+
+.ifooter {
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    background-color: rgb(230, 230, 230);
+    bottom: 0px;
+}
+
+.welcome {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 1.3em;
+  color: #fff;
+}
+
+.body {
+  background: url(metsa.png) no-repeat center center fixed;
+  overflow: hidden;
+  width: 100%;
 }

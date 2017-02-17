@@ -74,15 +74,8 @@ li {
   width: 100%;
 }
 
-.contactsheader {
-  background: linear-gradient(rgba(255, 255, 255, 0.3),rgba(0, 0, 0, 0.3)), url(tukit.jpg) no-repeat center center fixed; 
-  background-size: cover;
-  margin: 0px;
-  height:300px;
-}
-
 .infoheader {
-  background: linear-gradient(rgba(255, 255, 255, 0.3),rgba(0, 0, 0, 0.3)), url(puut.jpeg) no-repeat center center fixed; 
+  background: linear-gradient(rgba(255, 255, 255, 0.3),rgba(0, 0, 0, 0.3)), url(tukit.jpg) no-repeat center center fixed; 
   background-size: cover;
   margin: 0px;
   height:300px;
@@ -90,6 +83,13 @@ li {
 
 .newsheader {
     background: linear-gradient(rgba(255, 255, 255, 0.3),rgba(0, 0, 0, 0.3)),url(up.jpg) no-repeat center center fixed; 
+  background-size: cover;
+  margin: 0px;
+  height:300px;
+}
+
+.contactsheader {
+  background: linear-gradient(rgba(255, 255, 255, 0.3),rgba(0, 0, 0, 0.3)), url(puut.jpeg) no-repeat center center fixed; 
   background-size: cover;
   margin: 0px;
   height:300px;

@@ -220,10 +220,11 @@ p {
 }
 
 
-@media screen and (max-device-width: 500px) {
+@media screen and (max-device-width: 600px) {
     
     .blog-post {
-        width: 90%;
+        width: 100%;
+        background-color: red;
     }
     
     h1 {
@@ -237,6 +238,7 @@ p {
     
     h3 {
         font-size: 2em;
+        line-height: 120%;
     }
     
     .indexbody {
@@ -251,7 +253,7 @@ p {
     
     .navigation a {
         padding: 30px;
-        font-size: 2em;
+        font-size: 3em;
     }
     
     .indexbody {

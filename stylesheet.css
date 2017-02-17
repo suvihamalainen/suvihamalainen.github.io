@@ -227,7 +227,7 @@ p {
     }
     
     .blog-post p {
-        font-size: 1.5em;
+        font-size: 2em;
         line-height: 120%;
     }
     
@@ -254,20 +254,25 @@ p {
     #welcome {
         color: #000;
         font-size: 2em;
+        background-color: #fff;
+        font-weight: bold;
+    }
+    
+    #welcomebackground {
         background-color: #f2f2f2;
     }
      
     .footer li {
         display: inherit;
-        font-size: 2em;
+        font-size: 1.5em;
     }
     
-    .footer {
+    /**.footer {
         position:absolute;
         right: 0;
         bottom: 0;
         left: 0;
-    }
+    }**/
     
     .navigation a {
         padding: 30px;

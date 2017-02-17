@@ -241,10 +241,15 @@ p {
         line-height: 120%;
     }
     
-    .indexbody {
+    /**.indexbody {
         background: url(mobiilimetsa.png) no-repeat center center fixed;
         width: 100%;
         height: 100%;
+    }**/
+    
+    #welcome {
+        color: #000;
+        font-size: 2em;
     }
      
     .footer li {
@@ -264,5 +269,9 @@ p {
     
     header {
         height: 200%;
+    }
+    
+    #testi {
+        width: 100%;
     }
 }

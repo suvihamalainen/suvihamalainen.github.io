@@ -22,14 +22,12 @@ li {
 .navigation a {
     text-decoration: none;
     color: #000;
-    display: block;
-    
+    display: block;  
 }
 
 .navigation ul li ul li a {
     padding: 20px;
 }
-
 
 .others {
     background-color: rgba(255, 255, 255, 0.9);
@@ -69,30 +67,64 @@ li {
     display:block;   
 }    
 
-.indexbody {
+#indexbody {
   background: url(metsa.png) no-repeat center center fixed;
   width: 100%;
 }
 
-.infoheader {
+#infoheader {
   background: linear-gradient(rgba(255, 255, 255, 0.3),rgba(0, 0, 0, 0.3)), url(tukit.jpg) no-repeat center center fixed; 
   background-size: cover;
   margin: 0px;
-  height:300px;
+  height: 300px;
 }
 
-.newsheader {
+#newsheader {
     background: linear-gradient(rgba(255, 255, 255, 0.3),rgba(0, 0, 0, 0.3)),url(up.jpg) no-repeat center center fixed; 
   background-size: cover;
   margin: 0px;
-  height:300px;
+  height: 300px;
 }
 
-.contactsheader {
+#contactsheader {
   background: linear-gradient(rgba(255, 255, 255, 0.3),rgba(0, 0, 0, 0.3)), url(puut.jpeg) no-repeat center center fixed; 
   background-size: cover;
   margin: 0px;
-  height:300px;
+  height: 300px;
+}
+
+#welcome {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 1.3em;
+  color: #fff;
+}
+
+h1 {
+    text-align: center; 
+    position: relative;
+    top: 100px;
+    font-size: 3em;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    z-index: 999;
+    color: #fff;  
+}
+
+h2 {
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    color: black;
 }
 
 .blog-post {
@@ -116,7 +148,7 @@ li {
     height: auto;
     display: block;
     margin-left: auto;
-    margin-right: auto 
+    margin-right: auto;
 }
 
 .video-container {
@@ -131,31 +163,6 @@ li {
     left: 0;
     width: 89%;
     height: 100%;
-}
-
-h1 {
-    text-align: center; 
-    position: relative;
-    top: 100px;
-    font-size: 3em;
-    border-radius: 5px;
-    font-weight: bold;
-    font-family: 'Lato', sans-serif;
-    z-index: 999;
-    color: #fff;
-    
-}
-
-h2 {
-  font-size: 1.5em;
-  text-align: center;
-  font-weight: bold;
-  font-family: 'Lato', sans-serif;
-}
-
-p {
-    font-family: 'Lato', sans-serif;
-    color: black;
 }
 
 #face {
@@ -186,16 +193,6 @@ p {
     padding: inherit;
 }
 
-#welcome {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-size: 1.3em;
-  color: #fff;
-}
-
 @media screen and (max-width: 720px) {
     .footer li {
         display: inherit;
@@ -205,30 +202,26 @@ p {
 
 @media screen and (max-width: 600px) {
     
-    .blog-post {
-        width: 90%;
-    }
-    
     #welcome {
         width: 100%;
         line-height: 120%;
     }
     
-    .infoheader {
-        width: 100%;
+    .blog-post {
+        width: 90%;
     }
 }
 
 
 @media screen and (max-device-width: 600px) {
     
-    .blog-post {
-        width: 100%;
+    .navigation a {
+        padding: 30px;
+        font-size: 3em;
     }
     
-    .blog-post p {
-        font-size: 2em;
-        line-height: 120%;
+    header {
+        height: 200%;
     }
     
     h1 {
@@ -246,33 +239,24 @@ p {
     }
     
     #welcome {
-        color: #000;
-        font-size: 2em;
+        color: #737373;
+        font-size: 3em;
         background-color: #fff;
         font-weight: bold;
         margin-top: 20px;
+    }
+    
+    .blog-post {
+        width: 100%;
+    }
+    
+    .blog-post p {
+        font-size: 2em;
+        line-height: 120%;
     }
      
     .footer li {
         display: inherit;
         font-size: 1.5em;
-    }
-    
-    .navigation a {
-        padding: 30px;
-        font-size: 3em;
-    }
-    
-    .indexbody {
-        height: 100%;
-        width: auto;
-    }
-    
-    header {
-        height: 200%;
-    }
-    
-    .indexbody {
-        background-color: #f2f2f2;
     }
 }

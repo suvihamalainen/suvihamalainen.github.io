@@ -15,7 +15,7 @@ window.onload = function () {
         $("#pvm").html(jsondata.uutiset[count].päivämäärä);
         $("#newsContainer").html(jsondata.uutiset[count].sisältö);
         $("#newsImage").html('<img src="' + jsondata.uutiset[count].kuva + '"/>');
-    };
+    }
     
     function chooseInterval() {
         if (intervalOn) {
@@ -25,11 +25,11 @@ window.onload = function () {
             $("#testi").fadeOut(2000);
             if (Number(window.localStorage.clickcount) == 2) { window.localStorage.clickcount = 0;
             } else { window.localStorage.clickcount = Number(window.localStorage.clickcount) + 1;
-            };
+            }
         }, 4000);
         window.interval;
         }
-    };
+    }
     
     chooseInterval();
     
@@ -37,9 +37,9 @@ window.onload = function () {
         intervalOn = false;
         window.clearInterval(interval);
         $("#testi").stop(true);
-        if (Number(window.localStorage.clickcount) == 0) {window.localStorage.clickcount = 2;
+        if (Number(window.localStorage.clickcount) === 0) {window.localStorage.clickcount = 2;
         } else {window.localStorage.clickcount = Number(window.localStorage.clickcount) - 1;
-        };
+        }
         showNews(window.localStorage.clickcount);
     });
     
@@ -49,7 +49,7 @@ window.onload = function () {
         $("#testi").stop(true);
         if (Number(window.localStorage.clickcount) == 2) {window.localStorage.clickcount = 0;
         } else {window.localStorage.clickcount = Number(window.localStorage.clickcount) + 1;
-        };
+        }
         showNews(window.localStorage.clickcount);
     });
     
@@ -63,6 +63,6 @@ window.onload = function () {
             intervalOn = !intervalOn;
             chooseInterval();
             $("#testi").stop(false);
-        };
+        }
     });
 };

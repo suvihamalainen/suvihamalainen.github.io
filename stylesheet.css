@@ -138,6 +138,30 @@ p {
     line-height: 150%;
 }
 
+#newsContainer {
+    font-size: 1.2em;
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    padding: 10px 20px;
+    width: 33%;
+    text-align: center;
+    margin: 0 auto;
+    display: inline-block;
+    float: left;
+}
+
+button:hover {
+    background-color: rgba(230, 230, 230, 0.9); 
+}
+
+#panel {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 .blog-post a {
     color: #000;
 }
@@ -261,5 +285,5 @@ p {
     .footer li {
         display: inherit;
         font-size: 1.5em;
-    }
+    } 
 }

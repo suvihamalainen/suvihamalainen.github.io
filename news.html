@@ -12,6 +12,9 @@
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+        <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+        <script src="slideshow.js" type="text/javascript"></script>
+        <script src="https://use.fontawesome.com/fb9f11110a.js"></script>
     </head>
     
     <body>
@@ -33,12 +36,18 @@
         </nav>
         
         <section>
-            <h2 class="headline">Uutiset</h2>
             <article class="blog-post">
-                <h3>EU:lta tuli vauhtia bioenergialle, mutta kanta ei vastannut kaikkiin kysymyksiin</h3>
-                <p>Suomi on saamassa EU:lta tukea bioenergiahankkeilleen, mutta metsien hiilinielujen laskenta voi tuoda kylmän suihkun.</p>
-                <img class="resize" src="putin.jpg" alt="Vladimir Putin, Barack Obama ja Xi Jinping ilmastokokouksessa." title="Ilmastokysymykset herättävät paljon keskustelua päättäjien joukossa.">
-                <a href="http://www.hs.fi/paakirjoitukset/art-2000004893195.html" target="_blank">  Lue lisää</a> 
+                <div id="testi">
+                    <h2 id="otsikko"></h2>
+                    <h3 id="pvm"></h3>
+                    <div id="newsContainer"></div>
+                    <div id="newsImage" class="resize"></div>
+                </div>
+                <div id="panel">
+                    <div class="push"><button id="prev" type="button"><i class="fa fa-chevron-left" aria-hidden="true"></i></button></div>
+                    <div class="push"><button id="pause" type="button"><i class="fa fa-pause" aria-hidden="true"></i></button></div>
+                    <div class="push"><button id="next" type="button"><i class="fa fa-chevron-right" aria-hidden="true"></i></button></div>
+                </div>
             </article>
         </section>
         

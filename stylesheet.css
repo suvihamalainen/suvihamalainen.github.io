@@ -175,7 +175,7 @@ button:hover {
     margin-right: auto;
 }
 
-.video-container {
+/**.video-container {
     position: relative;
     padding: 56.25%;
     padding-top: 25px;
@@ -187,7 +187,7 @@ button:hover {
     left: 0;
     width: 89%;
     height: 100%;
-}
+}**/
 
 #face {
     max-width: 200px;
@@ -215,6 +215,12 @@ button:hover {
     bottom: 0;
     left: 0;
     padding: inherit;
+}
+
+#biovideo {
+    max-height: 315px; 
+    max-width: 560px;
+    width: 100%;
 }
 
 @media screen and (max-width: 720px) {

@@ -12,6 +12,8 @@
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+        <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+        <script src="https://use.fontawesome.com/fb9f11110a.js"></script>
     </head>
     
     <body>
@@ -37,9 +39,22 @@
             <article class="blog-post">
                 <h2>Asiaa puuenergiasta</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis diam et quam tincidunt condimentum vel et enim. Sed sed suscipit felis, in porttitor tellus. Etiam vitae lorem risus. Nam sit amet tristique ante. Nulla ornare, mauris at dictum fermentum, neque purus rhoncus nibh, id pellentesque elit arcu vitae nisi. Donec feugiat lorem vel erat dictum ornare. Curabitur nulla justo, condimentum quis eros at, lobortis pellentesque ligula. Duis rhoncus lacus eget nunc finibus luctus. Phasellus in fringilla nulla, nec convallis elit. Mauris libero eros, varius eu turpis ut, interdum ultricies magna. Nulla dapibus, augue vitae tempor congue, nibh enim convallis elit, at lobortis arcu elit pretium tellus. Proin vitae nibh laoreet mauris consectetur tincidunt eget nec lectus. Sed consequat aliquet mauris, sed dapibus velit fermentum a.</p>
-                <div class="video-container">
+                <!--<div class="video-container">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/Ps6Rn-i9t1Y" allowfullscreen></iframe>
-                </div>
+                </div>-->
+                <video  controls poster="mansikit.png" id="biovideo">
+                    <source src="biovideo.mpg" type="video/mpg">
+                    <source src="biovideo.ogv" type="video/ogg">
+                    <source src="biovideo.webm" type="video/webm">
+                    <object width="640" height="360" type="application/x-shockwave-flash" data="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf">
+                        <param name="movie" value="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" />
+		                <param name="flashVars" value="config={'playlist':['mansikit.png',{'url':'biovideo.mpg','autoPlay':false}]}" />
+                        <param name="allowFullScreen" value="true" />
+		                <img alt="Lehmät laitumella" src="mansikit.png" width="560" height="315" title="No video playback capabilities." />
+                    </object>
+                </video>
+                <canvas id="videocanvas">
+                </canvas>
             </article>
             
         </section>

@@ -142,7 +142,7 @@ p {
     font-size: 1.2em;
 }
 
-#panel button {
+button {
     background-color: rgba(255, 255, 255, 0.9);
     border: none;
     padding: 10px 20px;
@@ -153,8 +153,12 @@ p {
     float: left;
 }
 
-#panel button:hover {
+button:hover {
     background-color: rgba(230, 230, 230, 0.9); 
+}
+
+#speeds {
+  width: 909px;  
 }
 
 #panel {

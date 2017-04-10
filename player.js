@@ -1,6 +1,6 @@
 var player = {
-    x: 200,
-    y: 200,
+    x: 300,
+    y: 300,
     w: 60,
     h: 60,
     speed: 10,
@@ -110,5 +110,8 @@ function test() {
 
 
 function reset() {
-    
+    player.x = 300;
+    player.y = 300;
+    player.speed = 10;
+    player.imageY = 3*128;
 }

@@ -21,8 +21,8 @@ window.onload = function () {
         if (intervalOn) {
         interval = setInterval(function () {
             showNews(window.localStorage.clickcount);
-            $("#testi").fadeIn(2000);
-            $("#testi").fadeOut(2000);
+            //$("#testi").fadeIn(2000);
+            //$("#testi").fadeOut(2000);
             if (Number(window.localStorage.clickcount) == 2) { window.localStorage.clickcount = 0;
             } else { window.localStorage.clickcount = Number(window.localStorage.clickcount) + 1;
             }
@@ -30,7 +30,11 @@ window.onload = function () {
         window.interval;
         }
     }
-    
+  
+    $("#otsikko").html("Sampo Soimakallio: Avaimia metsien käytön ilmastovaikutusten ymmärtämiseen");
+    $("#pvm").html("9.3.2017");
+    $("#newsContainer").html("Suomen bioenergiasta, metsien kestävästä käytöstä ja hiilitaseesta käydään tiivistä keskustelua. Sampo Soimakallio avaa blogikirjoituksessaan SYKEn sivuilla asiaa paremmin ymmärrettäväksi.");
+    $("#newsImage").html('<img src="hakkuu.jpeg"/>');
     chooseInterval();
     
     document.getElementById("prev").addEventListener("click", function () {

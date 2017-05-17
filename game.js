@@ -94,8 +94,6 @@ theGame.prototype = {
             
         }
         
-        
-        
         else if (cursors.right.isDown) {
             player.body.velocity.x = 300;
             player.animations.play('right');

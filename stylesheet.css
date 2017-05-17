@@ -140,6 +140,11 @@ p {
 
 #newsContainer {
     font-size: 1.2em;
+    
+}
+
+#testi {
+    height: 500px;
 }
 
 button {

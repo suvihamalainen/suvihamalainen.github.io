@@ -1,8 +1,13 @@
-var gameTitle = function(game){}
+var gameTitle = function(game){
+    
+    var spaceKey;
+}
  
 gameTitle.prototype = {
     
   	create: function() {
+   // this.game.physics.startSystem(Phaser.Physics.ARCADE);
+        
         this.game.add.sprite(0, 0, 'sky');
         this.game.add.sprite(122, 25, 'biogame');
         
@@ -16,8 +21,22 @@ gameTitle.prototype = {
         var cow = this.game.add.sprite(90, 410, 'cow');
         this.game.add.tween(cow).to({ y: 380 }, 2000, Phaser.Easing.Quadratic.InOut, true, 0, 1000, true);
         
-        this.game.add.button(235, 465, "play", this.playTheGame, this);
+        var playButton = this.game.add.button(235, 465, "play", this.playTheGame, this);
+        this.game.add.tween(playButton).to({ y: 455}, 2000, Phaser.Easing.Quadratic.InOut, true, 0, 1000, true);
         this.game.add.sprite(0, 536, 'ground');
+        
+
+        this.spaceKey = this.game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
+        //this.game.input.keyboard.addKeyCapture(Phaser.Keyboard.SPACEBAR);
+        
+        
+        if (this.spaceKey.isDown) {
+            
+           this.playTheGame;
+            console.log('jes');
+        }
+        
+        
 	},
     
 	playTheGame: function() {

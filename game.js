@@ -9,6 +9,7 @@ var theGame = function(game){
     var missed;
     var coinSound;
     var soundButton;
+
 }
 
 theGame.prototype = {
@@ -38,7 +39,8 @@ theGame.prototype = {
         this.missed = 0;
         this.game.physics.startSystem(Phaser.Physics.ARCADE);
         this.game.add.sprite(0, 0, 'sky');
-        this.game.sound.mute = false;
+        //music
+        this.game.sound.mute = true;
         backgroundMusic = this.game.add.audio('gabe');
         backgroundMusic.loopFull();
         
